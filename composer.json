@@ -1,0 +1,31 @@
+{
+    "name": "arshadarshadli01/telegram-bot",
+    "description": "This package used for telegram-bot send message.",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Arshadarshadli01\\TelegramBot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arshad Arshadli",
+            "email": "arshad.arshadli02@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arshadarshadli01\\TelegramBot\\TelegramBotServiceProvider"
+            ],
+            "aliases": {
+                "TelegramBot": "Arshadarshadli01\\TelegramBot\\TelegramBotFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
